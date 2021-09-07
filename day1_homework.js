@@ -8,7 +8,8 @@ let dog_names = ["Max","HAS","PuRple","dog"]
 // let dog_names2 = ["max","have","purple","Dog"]
 
 function findWords(n,s){
-    return n.filter( element => s.includes(element) ); 
+    let new_array = n.filter(element => s.includes(element));
+    return new_array.length == 0 ? 'No Matches' : new_array;
 }
 
 console.log(findWords(dog_names,dog_string))
